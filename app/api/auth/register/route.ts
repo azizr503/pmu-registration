@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
     // Create new user
     const hashedPassword = await hashPassword(password)
     const newUser: User = {
-      id: crypto.randomUUID(),
+      id: require('crypto').randomUUID ? require('crypto').randomUUID() : `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       email: email.toLowerCase(),
       password: hashedPassword,
       firstName: firstName.trim(),
@@ -92,7 +92,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Registration error:', error)
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: `Registration failed: ${error instanceof Error ? error.message : 'Unknown error'}` },
       { status: 500 }
     )
   }
