@@ -1,11 +1,8 @@
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import { NextRequest } from 'next/server'
-import { promises as fs } from 'fs'
-import path from 'path'
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your-super-secret-jwt-key-change-in-production'
-const USERS_FILE = path.join(process.cwd(), 'data', 'users.json')
 
 export interface User {
   id: string
@@ -25,27 +22,32 @@ export interface AuthUser {
   studentId: string
 }
 
-// Initialize users file if it doesn't exist
-export async function initializeUsersFile() {
-  try {
-    await fs.access(USERS_FILE)
-  } catch {
-    // File doesn't exist, create it with empty array
-    await fs.mkdir(path.dirname(USERS_FILE), { recursive: true })
-    await fs.writeFile(USERS_FILE, JSON.stringify([]))
+// In-memory storage for development/demo (resets on server restart)
+let usersStorage: User[] = [
+  // Add your existing user data here if you want to preserve it
+  {
+    "id": "e1304350-f916-45a1-a1e2-372f8bdd9772",
+    "email": "aziz.saleh@pmu.edu.sa",
+    "password": "$2b$12$6YBwKVjUv7xjqLlrW36LH.fEBtAN4FQKGhDO9iE6kbW2mYDATQqti",
+    "firstName": "aziz",
+    "lastName": "sale",
+    "studentId": "20256341",
+    "createdAt": "2025-10-14T21:31:51.224Z"
   }
-}
+]
 
-// Read users from file
+// Read users from storage
 export async function getUsers(): Promise<User[]> {
-  await initializeUsersFile()
-  const data = await fs.readFile(USERS_FILE, 'utf-8')
-  return JSON.parse(data)
+  // For production, you can integrate with a database
+  // For now, using in-memory storage that works on Vercel
+  return usersStorage
 }
 
-// Write users to file
+// Write users to storage
 export async function saveUsers(users: User[]): Promise<void> {
-  await fs.writeFile(USERS_FILE, JSON.stringify(users, null, 2))
+  // For production, you can integrate with a database
+  // For now, using in-memory storage that works on Vercel
+  usersStorage = users
 }
 
 // Hash password
