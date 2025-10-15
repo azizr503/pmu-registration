@@ -1,0 +1,20 @@
+[
+  {
+    "id": "e1304350-f916-45a1-a1e2-372f8bdd9772",
+    "email": "aziz.saleh@pmu.edu.sa",
+    "password": "$2b$12$6YBwKVjUv7xjqLlrW36LH.fEBtAN4FQKGhDO9iE6kbW2mYDATQqti",
+    "firstName": "aziz",
+    "lastName": "sale",
+    "studentId": "20256341",
+    "createdAt": "2025-10-14T21:31:51.224Z"
+  },
+  {
+    "id": "239aac24-e9a3-4a83-86ac-ef9ff0b653d7",
+    "email": "aaaa@pmu.edu.sa",
+    "password": "$2b$12$GmBC8Q.GKKLF9lZAuvH22OuaQLTXt7fmMgkgRLdLw.OsWuqKkxJIK",
+    "firstName": "aaa",
+    "lastName": "aaa",
+    "studentId": "20254735",
+    "createdAt": "2025-10-15T22:12:14.948Z"
+  }
+]

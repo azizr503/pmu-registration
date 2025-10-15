@@ -1,0 +1,414 @@
+{
+  "courses": [
+    {
+      "code": "SOEN2351",
+      "title": "Data Structures and Algorithms I",
+      "credits": 3,
+      "hasLab": false,
+      "prereq": [],
+      "sections": [
+        {
+          "sectionId": "SOEN2351-01",
+          "type": "lecture",
+          "instructor": "Dr. Ahmed Al-Mansour",
+          "room": "B201",
+          "days": "MW",
+          "time": "10:00-11:30"
+        },
+        {
+          "sectionId": "SOEN2351-02",
+          "type": "lecture",
+          "instructor": "Dr. Sarah Johnson",
+          "room": "B203",
+          "days": "TR",
+          "time": "13:00-14:30"
+        },
+        {
+          "sectionId": "SOEN2351-03",
+          "type": "lecture",
+          "instructor": "Dr. Mohammed Hassan",
+          "room": "B205",
+          "days": "MW",
+          "time": "14:00-15:30"
+        },
+        {
+          "sectionId": "SOEN2351-04",
+          "type": "lecture",
+          "instructor": "Dr. Emily Chen",
+          "room": "B207",
+          "days": "TR",
+          "time": "10:00-11:30"
+        }
+      ]
+    },
+    {
+      "code": "SOEN3351",
+      "title": "Algorithms",
+      "credits": 3,
+      "hasLab": true,
+      "prereq": ["SOEN2351"],
+      "sections": [
+        {
+          "sectionId": "SOEN3351-01",
+          "type": "lecture",
+          "instructor": "Dr. Khalid Al-Zahrani",
+          "room": "C301",
+          "days": "MW",
+          "time": "11:00-12:30"
+        },
+        {
+          "sectionId": "SOEN3351-02",
+          "type": "lecture",
+          "instructor": "Dr. Lisa Anderson",
+          "room": "C303",
+          "days": "TR",
+          "time": "14:00-15:30"
+        },
+        {
+          "sectionId": "SOEN3351-L01",
+          "type": "lab",
+          "instructor": "TA: Omar Khalil",
+          "room": "Lab A",
+          "days": "W",
+          "time": "15:00-17:00"
+        },
+        {
+          "sectionId": "SOEN3351-L02",
+          "type": "lab",
+          "instructor": "TA: Fatima Ali",
+          "room": "Lab B",
+          "days": "R",
+          "time": "16:00-18:00"
+        }
+      ]
+    },
+    {
+      "code": "SOEN4351",
+      "title": "Operating Systems",
+      "credits": 3,
+      "hasLab": true,
+      "prereq": ["SOEN3351"],
+      "sections": [
+        {
+          "sectionId": "SOEN4351-01",
+          "type": "lecture",
+          "instructor": "Dr. Abdullah Rahman",
+          "room": "D401",
+          "days": "MW",
+          "time": "13:00-14:30"
+        },
+        {
+          "sectionId": "SOEN4351-02",
+          "type": "lecture",
+          "instructor": "Dr. Jennifer Lee",
+          "room": "D403",
+          "days": "TR",
+          "time": "11:00-12:30"
+        },
+        {
+          "sectionId": "SOEN4351-L01",
+          "type": "lab",
+          "instructor": "TA: Hassan Ahmed",
+          "room": "Lab C",
+          "days": "M",
+          "time": "15:00-17:00"
+        },
+        {
+          "sectionId": "SOEN4351-L02",
+          "type": "lab",
+          "instructor": "TA: Nora Ibrahim",
+          "room": "Lab D",
+          "days": "T",
+          "time": "15:00-17:00"
+        }
+      ]
+    },
+    {
+      "code": "SOEN3311",
+      "title": "Software Engineering",
+      "credits": 3,
+      "hasLab": false,
+      "prereq": ["SOEN2351"],
+      "sections": [
+        {
+          "sectionId": "SOEN3311-01",
+          "type": "lecture",
+          "instructor": "Dr. Faisal Al-Otaibi",
+          "room": "C201",
+          "days": "MW",
+          "time": "09:00-10:30"
+        },
+        {
+          "sectionId": "SOEN3311-02",
+          "type": "lecture",
+          "instructor": "Dr. Maria Garcia",
+          "room": "C203",
+          "days": "TR",
+          "time": "09:00-10:30"
+        },
+        {
+          "sectionId": "SOEN3311-03",
+          "type": "lecture",
+          "instructor": "Dr. Youssef Mansour",
+          "room": "C205",
+          "days": "MW",
+          "time": "15:00-16:30"
+        },
+        {
+          "sectionId": "SOEN3311-04",
+          "type": "lecture",
+          "instructor": "Dr. Rachel Kim",
+          "room": "C207",
+          "days": "TR",
+          "time": "15:00-16:30"
+        }
+      ]
+    },
+    {
+      "code": "SOEN4411",
+      "title": "Database Systems",
+      "credits": 3,
+      "hasLab": true,
+      "prereq": ["SOEN2351"],
+      "sections": [
+        {
+          "sectionId": "SOEN4411-01",
+          "type": "lecture",
+          "instructor": "Dr. Tariq Al-Harbi",
+          "room": "D301",
+          "days": "MW",
+          "time": "10:00-11:30"
+        },
+        {
+          "sectionId": "SOEN4411-02",
+          "type": "lecture",
+          "instructor": "Dr. Anna Petrova",
+          "room": "D303",
+          "days": "TR",
+          "time": "13:00-14:30"
+        },
+        {
+          "sectionId": "SOEN4411-L01",
+          "type": "lab",
+          "instructor": "TA: Ali Mohammed",
+          "room": "Lab E",
+          "days": "W",
+          "time": "13:00-15:00"
+        },
+        {
+          "sectionId": "SOEN4411-L02",
+          "type": "lab",
+          "instructor": "TA: Layla Hassan",
+          "room": "Lab F",
+          "days": "R",
+          "time": "09:00-11:00"
+        }
+      ]
+    },
+    {
+      "code": "MATH1101",
+      "title": "Calculus I",
+      "credits": 4,
+      "hasLab": false,
+      "prereq": [],
+      "sections": [
+        {
+          "sectionId": "MATH1101-01",
+          "type": "lecture",
+          "instructor": "Dr. Ibrahim Al-Qahtani",
+          "room": "A101",
+          "days": "MWTR",
+          "time": "08:00-09:00"
+        },
+        {
+          "sectionId": "MATH1101-02",
+          "type": "lecture",
+          "instructor": "Dr. Susan Miller",
+          "room": "A103",
+          "days": "MWTR",
+          "time": "10:00-11:00"
+        },
+        {
+          "sectionId": "MATH1101-03",
+          "type": "lecture",
+          "instructor": "Dr. Nasser Al-Dossary",
+          "room": "A105",
+          "days": "MWTR",
+          "time": "13:00-14:00"
+        },
+        {
+          "sectionId": "MATH1101-04",
+          "type": "lecture",
+          "instructor": "Dr. Patricia Wong",
+          "room": "A107",
+          "days": "MWTR",
+          "time": "15:00-16:00"
+        }
+      ]
+    },
+    {
+      "code": "MATH2201",
+      "title": "Calculus II",
+      "credits": 4,
+      "hasLab": false,
+      "prereq": ["MATH1101"],
+      "sections": [
+        {
+          "sectionId": "MATH2201-01",
+          "type": "lecture",
+          "instructor": "Dr. Saeed Al-Ghamdi",
+          "room": "A201",
+          "days": "MWTR",
+          "time": "09:00-10:00"
+        },
+        {
+          "sectionId": "MATH2201-02",
+          "type": "lecture",
+          "instructor": "Dr. David Thompson",
+          "room": "A203",
+          "days": "MWTR",
+          "time": "11:00-12:00"
+        },
+        {
+          "sectionId": "MATH2201-03",
+          "type": "lecture",
+          "instructor": "Dr. Maha Al-Shehri",
+          "room": "A205",
+          "days": "MWTR",
+          "time": "14:00-15:00"
+        },
+        {
+          "sectionId": "MATH2201-04",
+          "type": "lecture",
+          "instructor": "Dr. Robert Chen",
+          "room": "A207",
+          "days": "MWTR",
+          "time": "16:00-17:00"
+        }
+      ]
+    },
+    {
+      "code": "ENG1101",
+      "title": "English Composition I",
+      "credits": 3,
+      "hasLab": false,
+      "prereq": [],
+      "sections": [
+        {
+          "sectionId": "ENG1101-01",
+          "type": "lecture",
+          "instructor": "Dr. Huda Al-Mutairi",
+          "room": "E101",
+          "days": "MW",
+          "time": "08:00-09:30"
+        },
+        {
+          "sectionId": "ENG1101-02",
+          "type": "lecture",
+          "instructor": "Dr. James Wilson",
+          "room": "E103",
+          "days": "TR",
+          "time": "08:00-09:30"
+        },
+        {
+          "sectionId": "ENG1101-03",
+          "type": "lecture",
+          "instructor": "Dr. Aisha Al-Rashid",
+          "room": "E105",
+          "days": "MW",
+          "time": "11:00-12:30"
+        },
+        {
+          "sectionId": "ENG1101-04",
+          "type": "lecture",
+          "instructor": "Dr. Michael Brown",
+          "room": "E107",
+          "days": "TR",
+          "time": "11:00-12:30"
+        }
+      ]
+    },
+    {
+      "code": "ENG2202",
+      "title": "Technical Writing",
+      "credits": 3,
+      "hasLab": false,
+      "prereq": ["ENG1101"],
+      "sections": [
+        {
+          "sectionId": "ENG2202-01",
+          "type": "lecture",
+          "instructor": "Dr. Noura Al-Zahrani",
+          "room": "E201",
+          "days": "MW",
+          "time": "09:00-10:30"
+        },
+        {
+          "sectionId": "ENG2202-02",
+          "type": "lecture",
+          "instructor": "Dr. Thomas Anderson",
+          "room": "E203",
+          "days": "TR",
+          "time": "10:00-11:30"
+        },
+        {
+          "sectionId": "ENG2202-03",
+          "type": "lecture",
+          "instructor": "Dr. Reem Al-Otaibi",
+          "room": "E205",
+          "days": "MW",
+          "time": "13:00-14:30"
+        },
+        {
+          "sectionId": "ENG2202-04",
+          "type": "lecture",
+          "instructor": "Dr. Christopher Lee",
+          "room": "E207",
+          "days": "TR",
+          "time": "14:00-15:30"
+        }
+      ]
+    },
+    {
+      "code": "PHYS1101",
+      "title": "Physics I",
+      "credits": 4,
+      "hasLab": true,
+      "prereq": ["MATH1101"],
+      "sections": [
+        {
+          "sectionId": "PHYS1101-01",
+          "type": "lecture",
+          "instructor": "Dr. Waleed Al-Shammari",
+          "room": "F101",
+          "days": "MW",
+          "time": "10:00-11:30"
+        },
+        {
+          "sectionId": "PHYS1101-02",
+          "type": "lecture",
+          "instructor": "Dr. Elizabeth Taylor",
+          "room": "F103",
+          "days": "TR",
+          "time": "13:00-14:30"
+        },
+        {
+          "sectionId": "PHYS1101-L01",
+          "type": "lab",
+          "instructor": "TA: Khalid Nasser",
+          "room": "Physics Lab 1",
+          "days": "M",
+          "time": "14:00-16:00"
+        },
+        {
+          "sectionId": "PHYS1101-L02",
+          "type": "lab",
+          "instructor": "TA: Sara Ahmed",
+          "room": "Physics Lab 2",
+          "days": "T",
+          "time": "15:00-17:00"
+        }
+      ]
+    }
+  ]
+}
