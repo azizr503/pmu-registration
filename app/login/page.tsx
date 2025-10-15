@@ -1,7 +1,9 @@
 "use client"
 
 import { Suspense } from "react"
-import LoginContent from "./LoginContent"
+import dynamic from "next/dynamic"
+
+const LoginContent = dynamic(() => import("./LoginContent"), { ssr: false })
 
 export default function LoginPage() {
   return (
